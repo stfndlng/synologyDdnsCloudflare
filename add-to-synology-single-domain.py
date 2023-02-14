@@ -9,9 +9,9 @@ config= configparser.ConfigParser()
 config.read('/etc.defaults/ddns_provider.conf')
 
 try:
-        config['Cloudflare Single Domain']
+        config['CloudflareSingleDomain']
 except KeyError:
-        config['Cloudflare Single Domain']= {}
+        config['CloudflareSingleDomain']= {}
 
 config['CloudflareMDDNS']['modulepath'] = '/usr/syno/bin/ddns/cloudflare-single-domain.php'
 config['CloudflareMDDNS']['queryurl'] = 'https://www.cloudflare.com/'
