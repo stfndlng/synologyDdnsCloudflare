@@ -2,7 +2,7 @@ import configparser
 import urllib.request
 import os, stat
 
-url = 'https://raw.githubusercontent.com/stfndlng/cloudflareddnstaskscript/main/cfmddns.php'
+url = 'https://raw.githubusercontent.com/stfndlng/cloudflareddnstaskscript/main/multi-domain.php'
 target_file = '/usr/syno/bin/ddns/cloudflareMdddns.php'
 
 config= configparser.ConfigParser()
