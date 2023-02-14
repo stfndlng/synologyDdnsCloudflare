@@ -3,17 +3,17 @@ import urllib.request
 import os, stat
 
 url = 'https://raw.githubusercontent.com/stfndlng/cloudflareddnstaskscript/main/multi-domain.php'
-target_file = '/usr/syno/bin/ddns/cloudflareMdddns.php'
+target_file = '/usr/syno/bin/ddns/cloudflare-multi-domain.php'
 
 config= configparser.ConfigParser()
 config.read('/etc.defaults/ddns_provider.conf')
 
 try:
-        config['CloudflareMDDNS']
+        config['Cloudflare Multi Domain']
 except KeyError:
-        config['CloudflareMDDNS']= {}
+        config['Cloudflare Multi Domai']= {}
 
-config['CloudflareMDDNS']['modulepath'] = '/usr/syno/bin/ddns/cloudflareMdddns.php'
+config['CloudflareMDDNS']['modulepath'] = '/usr/syno/bin/ddns/cloudflare-multi-domain.php'
 config['CloudflareMDDNS']['queryurl'] = 'https://www.cloudflare.com/'
 
 with open('/etc.defaults/ddns_provider.conf', 'w') as configfile:
