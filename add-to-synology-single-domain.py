@@ -11,7 +11,7 @@ config.read('/etc.defaults/ddns_provider.conf')
 try:
         config['Cloudflare Single Domain']
 except KeyError:
-        config['Cloudflare Single Domai']= {}
+        config['Cloudflare Single Domain']= {}
 
 config['CloudflareMDDNS']['modulepath'] = '/usr/syno/bin/ddns/cloudflare-single-domain.php'
 config['CloudflareMDDNS']['queryurl'] = 'https://www.cloudflare.com/'
