@@ -13,8 +13,8 @@ try:
 except KeyError:
         config['Cloudflare Multi Domai']= {}
 
-config['CloudflareMDDNS']['modulepath'] = '/usr/syno/bin/ddns/cloudflare-multi-domain.php'
-config['CloudflareMDDNS']['queryurl'] = 'https://www.cloudflare.com/'
+config['Cloudflare Multi Domain']['modulepath'] = '/usr/syno/bin/ddns/cloudflare-multi-domain.php'
+config['Cloudflare Multi Domain']['queryurl'] = 'https://www.cloudflare.com/'
 
 with open('/etc.defaults/ddns_provider.conf', 'w') as configfile:
         config.write(configfile)
