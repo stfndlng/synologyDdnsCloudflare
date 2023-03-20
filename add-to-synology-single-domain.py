@@ -2,7 +2,7 @@ import configparser
 import urllib.request
 import os, stat
 
-url = 'https://raw.githubusercontent.com/stfndlng/cloudflareddnstaskscript/main/single-domain.php'
+url = 'https://raw.githubusercontent.com/stfndlng/synologyDdnsCloudflare/main/single-domain.php'
 target_file = '/usr/syno/bin/ddns/cloudflare-single-domain.php'
 
 config= configparser.ConfigParser()
